@@ -2,7 +2,7 @@ import urllib.request
 import json 
 import sqlite3
 
-API_KEY = "4e0be2c22f7268edffde97481d49064a"
+API_KEY = ""
 
 with urllib.request.urlopen("https://api.themoviedb.org/3/search/movie?/&query=Movie&api_key=" + API_KEY + "&language=en-US") as url:
     data = json.loads(url.read().decode())
